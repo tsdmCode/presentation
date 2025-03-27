@@ -1,10 +1,6 @@
-const headline = document.getElementById('headline');
-const subheadline = document.getElementById('subheadline');
-const html = document.getElementById('HTML');
-const css = document.getElementById('CSS');
-const javaScript = document.getElementById('Javascript');
+const testing = document.querySelectorAll('.text');
 let n = 0;
-const array = [headline, subheadline, html, css, javaScript];
+
 const textArr = [
   'HEJ BROBYGGERE',
   'Her på webdev bruger vi mange teknologier, så som HTML, CSS og Javascript.',
@@ -13,11 +9,11 @@ const textArr = [
   'JavaScript tager sig af funktionaliteten, og kan beskrives som husets elektricitet. Det er også javascript, som får det her tekst til at dukke op.',
 ];
 function print() {
-  if (n >= textArr.length || n >= array.length) return;
+  if (n >= textArr.length || n >= testing.length) return;
 
   const word = textArr[n];
   console.log(word);
-  const element = array[n];
+  const element = testing[n];
   console.log(element);
   element.textContent = '';
 

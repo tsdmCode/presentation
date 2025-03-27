@@ -1,10 +1,17 @@
+@font-face {
+  font-family: 'Matrix Code NFI';
+  src: url('../fonts/matrix\ code\ nfi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: lime;
-  font-family: sans-serif;
-  font-weight: bold;
+  background: #000000;
+  color: #00ff41;
+  font-family: 'Matrix Code NFI', sans-serif;
+  text-shadow: 0 0 3px #00ff41, 0 0 5px #00ff41, 0 0 5px #00ff41;
+  text-transform: uppercase;
   /* text-align: center; */
 }
 main {
