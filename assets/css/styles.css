@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: lime;
+  font-family: sans-serif;
+  font-weight: bold;
+  /* text-align: center; */
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 70vh;
+  width: 90%;
+  border: 2px solid limegreen;
+  border-radius: 10px;
+}
+
+h1 {
+  /* margin-left: 35%; */
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  margin: 1rem;
+  font-size: 2rem;
+}
