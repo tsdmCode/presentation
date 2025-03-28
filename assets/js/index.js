@@ -1,4 +1,4 @@
-const testing = document.querySelectorAll('.text');
+const pres = Array.from(document.getElementsByClassName('text'));
 let n = 0;
 
 const textArr = [
@@ -9,20 +9,16 @@ const textArr = [
   'JavaScript tager sig af funktionaliteten, og kan beskrives som husets elektricitet. Det er også javascript, som får det her tekst til at dukke op.',
 ];
 function print() {
-  if (n >= textArr.length || n >= testing.length) return;
+  if (n >= textArr.length || n >= pres.length) return;
 
   const word = textArr[n];
-  console.log(word);
-  const element = testing[n];
-  console.log(element);
-  element.textContent = '';
+  const el = pres[n];
 
   for (let i = 0; i < word.length; i++) {
     setTimeout(() => {
-      element.innerHTML += word[i];
-    }, i * 75);
+      el.innerHTML += word[i];
+    }, i * 25);
   }
   n++;
-  console.log(n);
 }
 document.addEventListener('keydown', print);
