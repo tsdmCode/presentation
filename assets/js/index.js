@@ -16,7 +16,6 @@ function print() {
 
   for (let i = 0; i < word.length; i++) {
     setTimeout(() => {
-      console.log(word[i]);
       el.innerHTML += word[i];
     }, i * 75);
   }
