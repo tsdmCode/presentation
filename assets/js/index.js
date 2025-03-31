@@ -9,7 +9,10 @@ const textArr = [
   'JavaScript tager sig af funktionaliteten, og kan beskrives som husets elektricitet. Det er også JavaScript, som får denne her tekst til at dukke op som den gør.',
 ];
 function print() {
-  if (n >= textArr.length || n >= pres.length) return;
+  if (n >= textArr.length || n >= pres.length) {
+    document.removeEventListener('click', print);
+    return;
+  }
 
   const word = textArr[n];
   const el = pres[n];
